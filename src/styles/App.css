@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.game_title {
+  margin: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

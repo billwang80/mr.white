@@ -1,0 +1,46 @@
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #b8b8b8;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+button {
+  background: none;
+  border: 0px;
+	color: #888;
+	font-size: 15px;
+	width: 60px;
+	margin: 10px 0 0;
+	font-family: Lato, sans-serif;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #0FC57C;
+}
+
+.start_btn {
+  font-size: 25px;
+  background-color: #888;
+  border-radius: 8px; 
+  margin: 12px;
+  width: 8%;
+  /* padding: 5px; */
+  color: #f7f7f7;
+}
+
+.start_btn:hover {
+  background-color: #47b88b;
+  color: #f7f7f7;
+}
+
+.player_container {
+  margin-top: 12px;
+}

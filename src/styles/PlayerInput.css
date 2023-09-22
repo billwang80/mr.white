@@ -1,0 +1,15 @@
+.playerInput {
+  margin: 8px;
+  text-align: center;
+}
+
+.playerInput_text {
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+  padding: 8px;
+  margin: 0 auto;
+  font-size: 25px;
+  background-color: #cae6da;
+  border-radius: 8px;
+}

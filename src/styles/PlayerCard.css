@@ -1,0 +1,25 @@
+.card {
+  background-color: white;
+  margin: 1%;
+  height: 50px;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 5px 5px rgba(0,0,0,0.15);
+  min-width: 120px;
+  max-width: 30%;
+  box-sizing: border-box;
+}
+
+.card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__text {
+  height: 100%;
+  font-size: 1.25rem;
+}
+
+.revealed_text {
+  color: red;
+}

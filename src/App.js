@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { 
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom';
+
+import AddPlayerView from './components/AddPlayerView';
+import PlayGameView from './components/PlayGameView';
+
+import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='game_title'>Mr. White</div>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<AddPlayerView />} />
+          <Route exact path='/play' element={<PlayGameView />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
