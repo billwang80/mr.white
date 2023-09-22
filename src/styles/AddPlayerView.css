@@ -32,6 +32,7 @@ button:hover {
   border-radius: 8px; 
   margin: 12px;
   width: 8%;
+  min-width: 80px;
   /* padding: 5px; */
   color: #f7f7f7;
 }

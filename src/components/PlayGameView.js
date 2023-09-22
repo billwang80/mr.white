@@ -21,6 +21,7 @@ const PlayGameView = () => {
           ))
         }
       </div>
+      <div className="tutorial_text">Click on your card to see your word. Refresh the page for new roles.</div>
     </div>
   )
 }
