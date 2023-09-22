@@ -66,7 +66,6 @@ const getRoles = (players, n_imposters) => {
     players[i] = player;
   })
 
-  console.log(players)
   return players;
 }
 

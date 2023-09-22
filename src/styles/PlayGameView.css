@@ -5,9 +5,20 @@
   align-content: flex-start;
   /* width: 70%; */
   justify-content: center;
-  padding: 1%;
+  padding: 16px;
 }
 
 .tutorial_text {
   margin-top: 16px;
+}
+
+.reveal-active {
+  background-color: red;
+  color: white;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.reveal-active:hover {
+  color: white;
 }

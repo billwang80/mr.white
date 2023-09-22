@@ -2,11 +2,11 @@ import React from 'react';
 
 import '../styles/PlayerInput.css';
 
-const PlayerInput = (player) => {
+const PlayerInput = ({player}) => {
 
   return (
     <div className='playerInput'>
-      <div className='playerInput_text'>{player.player.name}</div>
+      <div className='playerInput_text'>{player.name}</div>
       {/* <div>Remove</div> */}
     </div>
   )

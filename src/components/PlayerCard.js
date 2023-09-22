@@ -2,13 +2,20 @@ import React, { useState } from "react";
 
 import '../styles/PlayerCard.css';
 
-const PlayerCard = (player) => {
+const PlayerCard = ({player, revealOn}) => {
   const [flipped, setFlipped] = useState(false);
-  const player_data = player.player;
-  // console.log(player_data.name);
 
   const flipCard = () => {
     setFlipped(!flipped);
+  }
+
+  let roleText = '';
+  if (revealOn) {
+    if (player.role === 1) {
+      roleText = 'Civilian';
+    } else if (player.role === -1) {
+      roleText = 'Imposter';
+    }
   }
 
   return (
@@ -17,11 +24,12 @@ const PlayerCard = (player) => {
         {flipped ? 
         (
           <div className="card__text revealed_text">
-            {player_data.word}
+            {player.word}
+            <div>{roleText}</div>
           </div>
         ) : (
           <div className="card__text">
-            {player_data.name}
+            {player.name}
           </div>
         )}
       </div>
