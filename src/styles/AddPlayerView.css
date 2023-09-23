@@ -1,4 +1,4 @@
-input[type="text"] {
+input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -24,6 +24,11 @@ button {
 
 button:hover {
 	color: #0FC57C;
+}
+
+.input_prompt {
+  font-size: 20px;
+  padding-right: 30px;
 }
 
 .start_btn {

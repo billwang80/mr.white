@@ -39,7 +39,7 @@ const getWords = (roles) => {
 const getRoles = (players, n_imposters) => {
   const n = players.length;
 
-  if (n_imposters === undefined) {
+  if (n_imposters == 0) {
     n_imposters = Math.floor((n - 1) / 2);
   } 
 

@@ -15,7 +15,11 @@ const PlayerCard = ({player, revealOn}) => {
       roleText = 'Civilian';
     } else if (player.role === -1) {
       roleText = 'Imposter';
+    } else {
+      roleText = 'Mr. White';
     }
+  } else {
+    roleText = player.word;
   }
 
   return (
@@ -24,7 +28,7 @@ const PlayerCard = ({player, revealOn}) => {
         {flipped ? 
         (
           <div className="card__text revealed_text">
-            {player.word}
+            {player.name}
             <div>{roleText}</div>
           </div>
         ) : (

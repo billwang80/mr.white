@@ -10,12 +10,12 @@ const PlayGameView = () => {
   const [revealOn, setRevealOn] = useState(false);
   const [playerRoles, setPlayerRoles] = useState([]);
   const {state} = useLocation();
-  const {players} = state;
+  const {players, numImposters} = state;
 
   // let playerRoles = [];
 
   useEffect(() => {
-    setPlayerRoles(getRoles(players));
+    setPlayerRoles(getRoles(players, numImposters));
   }, [])
   // const playerRoles = getRoles(players);
 
@@ -33,7 +33,7 @@ const PlayGameView = () => {
         }
       </div>
 
-      <button className={revealOn ? 'reveal-active': ''} onClick={toggleReveal}>Reveal</button>
+      <button className={revealOn ? 'reveal-btn reveal-active': 'reveal-btn'} onClick={toggleReveal}>{revealOn ? 'Revealing':'Reveal Role'}</button>
 
       <div className="tutorial_text">Click on your card to see your word. Refresh the page for new roles.</div>
     </div>
